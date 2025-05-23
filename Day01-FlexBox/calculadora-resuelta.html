@@ -1,0 +1,80 @@
+<head>
+    <style>
+        body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: sans-serif;
+        background: #f0f0f0;
+        }
+
+        .calculadora {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 0 10px #aaa;
+        }
+
+        .pantalla {
+        background: #222;
+        color: white;
+        text-align: right;
+        padding: 20px;
+        font-size: 2em;
+        }
+
+        .teclado {
+        display: flex;
+        flex-wrap: wrap;
+        }
+
+        .teclado button {
+        flex: 1 0 25%;
+        padding: 20px;
+        font-size: 1.2em;
+        border: 1px solid #ccc;
+        background: white;
+        cursor: pointer;
+        transition: background 0.2s;
+        }
+
+        .teclado button:hover {
+        background: #eee;
+        }
+
+        .cero {
+        flex: 0 0 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calculadora">
+        <div class="pantalla">0</div>
+        <div class="teclado">
+        <button>C</button>
+        <button>←</button>
+        <button>%</button>
+        <button>/</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>*</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>-</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>+</button>
+        <button class="cero">0</button>
+        <button>.</button>
+        <button>=</button>
+        </div>
+    </div>
+</body>
